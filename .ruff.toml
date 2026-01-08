@@ -1,0 +1,34 @@
+# Ruff configuration for linting and import sorting.
+# See: https://docs.astral.sh/ruff/
+
+target-version = "py38"
+line-length = 88
+
+# Include common project locations; adjust if your repo layout differs.
+src = ["src", "figures"]
+
+[lint]
+# A balanced default set for research codebases.
+select = [
+  "E",   # pycodestyle errors
+  "F",   # pyflakes
+  "W",   # pycodestyle warnings
+  "I",   # isort (import sorting)
+  "B",   # flake8-bugbear
+  "UP",  # pyupgrade
+]
+ignore = [
+  "E203", # whitespace before ':' (conflicts with Black)
+  "E501", # line length handled by Black
+]
+
+[lint.per-file-ignores]
+# Allow unused imports in package __init__ files.
+"**/__init__.py" = ["F401"]
+
+[format]
+# Keep formatting compatible with Black.
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
