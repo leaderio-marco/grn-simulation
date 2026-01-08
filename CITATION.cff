@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated preprint and this repository."
+title: "Gene regulatory network structure informs the distribution of perturbation effects"
+type: software
+license: MIT
+repository-code: "https://github.com/yourusername/your-repo-name"
+abstract: "Source code and analysis scripts accompanying the preprint 'Gene regulatory network structure informs the distribution of perturbation effects'."
+authors:
+  - family-names: "Aguirre"
+    given-names: "M. A."
+  - family-names: "Spence"
+    given-names: "J. P."
+  - family-names: "Sella"
+    given-names: "G."
+  - family-names: "Pritchard"
+    given-names: "J. K."
+date-released: "2024-07-04"
+preferred-citation:
+  type: article
+  title: "Gene regulatory network structure informs the distribution of perturbation effects"
+  authors:
+    - family-names: "Aguirre"
+      given-names: "M. A."
+    - family-names: "Spence"
+      given-names: "J. P."
+    - family-names: "Sella"
+      given-names: "G."
+    - family-names: "Pritchard"
+      given-names: "J. K."
+  journal: "bioRxiv"
+  year: 2024
+  doi: "10.1101/2024.07.04.602130"
+  url: "https://doi.org/10.1101/2024.07.04.602130"
